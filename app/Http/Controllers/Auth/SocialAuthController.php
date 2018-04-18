@@ -102,12 +102,12 @@ class SocialAuthController extends Controller
 
     protected function loginOrCreateAccount($providerUser, $driver)
     {
-// check for already has account
+        // check for already has account
         $user = User::where('email', $providerUser->getEmail())->first();
 
-// if user already found
+        // if user already found
         if ($user) {
-// update the avatar and provider that might have changed
+            // update the avatar and provider that might have changed
             $user->update([
                 'avatar' => $providerUser->avatar,
                 'provider' => $driver,
@@ -115,7 +115,7 @@ class SocialAuthController extends Controller
                 'access_token' => $providerUser->token
             ]);
         } else {
-// create a new user
+            // create a new user
             $user = User::create([
                 'name' => $providerUser->getName(),
                 'email' => $providerUser->getEmail(),
@@ -123,7 +123,7 @@ class SocialAuthController extends Controller
                 'provider' => $driver,
                 'provider_id' => $providerUser->getId(),
                 'access_token' => $providerUser->token,
-// user can use reset password to create a password
+                // user can use reset password to create a password
                 'password' => ''
             ]);
         }

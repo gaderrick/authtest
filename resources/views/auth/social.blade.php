@@ -18,14 +18,22 @@
                     <div class="panel-body">
                         <p class="lead text-center">Authenticate using your social network account from one of following
                             providers</p>
-                        <a href="{{ route('social.oauth', 'twitter') }}" class="btn btn-info btn-block"><img width="36"
-                                                                                                             src="images/icon-twitter-logo.svg">Twitter</a>
-                        <a href="{{ route('social.oauth', 'github') }}" class="btn btn-default btn-block"><img
-                                width="36" src="images/icon-linkedin-logo.svg">Github</a>
-                        <a href="{{ route('social.oauth', 'facebook') }}" class="btn btn-primary btn-block"><img
-                                width="36" src="images/icon-facebook-logo.svg">Facebook</a>
-                        <a href="{{ route('social.oauth', 'google') }}" class="btn btn-danger btn-block"><img width="36"
-                                                                                                              src="images/icon-google-plus-logo.svg">Google</a>
+                        <a href="{{ route('social.oauth', 'facebook') }}">
+                            <img width="36"
+                                 src="{{ asset('images/icon-facebook-logo.svg') }}"
+                                 alt="Facebook"></a> &nbsp;
+                        <a href="{{ route('social.oauth', 'google') }}">
+                            <img width="36"
+                                 src="{{ asset('images/icon-google-plus-logo.svg') }}"
+                                 alt="Google"></a> &nbsp;
+                        <a href="{{ route('social.oauth', 'github') }}">
+                            <img width="36"
+                                 src="{{ asset('images/icon-github-logo.svg') }}"
+                                 alt="Github"></a> &nbsp;
+                        <a href="{{ route('social.oauth', 'twitter') }}">
+                            <img width="36"
+                                 src="{{ asset('images/icon-twitter-logo.svg') }}"
+                                 alt="Twitter"></a>
                     </div>
                 </div>
             </div>
