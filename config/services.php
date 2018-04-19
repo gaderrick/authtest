@@ -32,6 +32,12 @@ return [
         'redirect'      => env('APP_URL') . '/oauth/google/callback',
     ],
 
+    'linkedin' => [
+        'client_id'     => env('LI_ID'),
+        'client_secret' => env('LI_SECRET'),
+        'redirect'      => env('APP_URL') . '/oauth/linkedin/callback',
+    ],
+
     'twitter' => [
         'client_id'     => env('TW_ID'),
         'client_secret' => env('TW_SECRET'),

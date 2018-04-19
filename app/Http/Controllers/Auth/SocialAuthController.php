@@ -25,6 +25,7 @@ class SocialAuthController extends Controller
         'github',
         'facebook',
         'google',
+        'linkedin',
         'twitter'
     ];
 

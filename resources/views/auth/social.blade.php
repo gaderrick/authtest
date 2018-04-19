@@ -30,6 +30,10 @@
                             <img width="36"
                                  src="{{ asset('images/icon-github-logo.svg') }}"
                                  alt="Github"></a> &nbsp;
+                        <a href="{{ route('social.oauth', 'linkedin') }}">
+                            <img width="36"
+                                 src="{{ asset('images/icon-linkedin-logo.svg') }}"
+                                 alt="LinkedIn"></a> &nbsp;
                         <a href="{{ route('social.oauth', 'twitter') }}">
                             <img width="36"
                                  src="{{ asset('images/icon-twitter-logo.svg') }}"
